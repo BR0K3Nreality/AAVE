@@ -1,6 +1,5 @@
 midi2audio==0.1.1
 MIDIUtil==1.2.1
 numpy==1.21.6
-Pillow==9.5.0
-Pillow==9.5.0
+Pillow==1.7.3
 scipy==1.10.1
