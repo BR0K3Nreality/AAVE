@@ -3,4 +3,4 @@ MIDIUtil==1.2.1
 numpy==1.21.6
 Pillow==9.5.0
 Pillow==9.5.0
-scipy==1.10.1
+scipy==1.7.3
