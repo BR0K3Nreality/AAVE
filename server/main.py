@@ -62,8 +62,12 @@ def delete_file(path):
         print("The file does not exist")
 
 def convertImg(path):
-    image = Image.open(path).convert("RGB")
-    midi = image_to_midi(image)
+image = Image.open(path).convert("RGB")
+    
+    # Compress the image
+    compressed_image_path = path.replace(".png", "_compressed.png")
+    compress_image(path, compressed_image_path)
+    
     output_filename = f"{path.split('/')[-1].split('.')[0]}.mid"
     output_filepath = os.path.join("./output/", output_filename)
     with open(output_filepath, "wb") as output_file:
