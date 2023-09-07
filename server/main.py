@@ -62,7 +62,7 @@ def delete_file(path):
         print("The file does not exist")
 
 def convertImg(path):
-image = Image.open(path).convert("RGB")
+    image = Image.open(path).convert("RGB")
     
     # Compress the image
     compressed_image_path = path.replace(".png", "_compressed.png")
